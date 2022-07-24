@@ -1,4 +1,4 @@
-from logger import init
+from logger import init as init_logging
 from logging import DEBUG
 
 from udpipe import process
@@ -15,5 +15,5 @@ def main():
 
 
 if __name__ == "__main__":
-    init(__name__, DEBUG)
+    init_logging(__name__, DEBUG)
     main()
