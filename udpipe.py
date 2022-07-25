@@ -20,8 +20,8 @@ def _get(url):
     with urlopen(url) as response:
         logger.info(f"Got response {response.code}")
         json = json_load(response)
-        logger.debug(f"JSON response:\n{repr(json)}")
-        return json
+    logger.debug(f"JSON response:\n{repr(json)}")
+    return json
 
 
 def _process_url(data):
